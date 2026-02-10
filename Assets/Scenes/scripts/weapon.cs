@@ -23,6 +23,7 @@ public class weapon : MonoBehaviour
         {
             if (Input.GetMouseButton(0) && weaponScript.enabled)
             {
+                Debug.Log("player presed left click");
                 Instantiate(bullet, shootPosition.position, transform.rotation);
                 TimebtwShots = startTimeBtwShots;
             }
